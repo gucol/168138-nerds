@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Nёrd's. Магазин.</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="header-top">
+					<div class="logo">
+						<a href="">
+							<img src="" width="100" height="100" alt="">
+						</a>	
+					</div>
+					<nav class="main-menu">
+						<ul>
+   							<li><a href="#">Студия</a></li>
+							<li><a href="#">Клиенты</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="user-block">
+          				<a class="basket" href="#">Корзина</a>
+        			</div>
+				</div>
+				<h1>Добро пожаловать в магазин готовых макетов</h1>
+			</div>
+		</header>
+		<main class="container">
+			<section class="search">
+				<form action="/echo" method="post">
+					 <div class="range">
+						<input type="range" min="" max="" name="range" id="range-field">
+						<input type="number" name="from" id="from-field">
+						<input type="number" name="to" id="to-field">					
+
+						<label for="range-field">Стоимость:</label>
+						<label for="from-field">от</label>
+						<label for="to-field">до</label>
+					 </div>
+				 	<h2>Сетка:</h2>
+					<label>
+						<input type="radio" name="net-type" value="Adaptive" checked>
+						Адаптивная
+					</label>
+					<label>
+						<input type="radio" name="net-type" value="Fixed">
+						Фиксированная
+					</label>
+					<label>
+						<input type="radio" name="net-type" value="Rubber">
+						Резиновая
+					</label>
+
+					<h2>Особенности:</h2>
+					<div>
+						<input type="checkbox" name="slider" id="slider-field" checked>
+						<input type="checkbox" name="advantages" id="advantages-field">
+						<input type="checkbox" name="news" id="news-field" checked>
+						<input type="checkbox" name="gallery" id="gallery-field">
+						<input type="checkbox" name="basket" id="basket-field">
+					</div>
+					<div>
+						<label for="slider-field">Слайдер</label>
+						<label for="advantages-field">Блок преимуществ</label>
+						<label for="news-field">Новости</label>
+						<label for="gallery-field">Галерея</label>
+						<label for="basket-field">Корзина</label>
+					</div>
+					<a href="#">Показать</a>
+				</form>
+			</section>
+			<section class="gallery">
+				<div class="sorting">
+					<p>Сортировать:</p>
+					<button type="button" name="price">по цене</button>
+					<button type="button" name="type">по типу</button>
+					<button type="button" name="function">по функционалу</button>
+					<div class="bottom"></div>
+					<div class="up"></div>
+				</div>
+				<div class="articles">
+					<article class="product"></article>
+				</div>
+				<div class="gall-nav">
+					<button type="button">1</button>
+					<button type="button">2</button>
+					<button type="button">3</button>
+					<button type="button">следующая</button>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<div class="container">
+				<div class="footer-top">
+					<iframe src="" width="100" height="100"></iframe>
+					<div class="contacts">
+						<h3>Nёrd's design studio</h3>
+						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<button>Напишите нам</button>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-social">
+						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					</div>
+					<div class="footer-text">
+						<b>Давайте дружить, это выгодно!</b>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
