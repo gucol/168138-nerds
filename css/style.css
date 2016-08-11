@@ -1,0 +1,26 @@
+body {
+/* Типографика*/ 
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136; 
+  font-family: "Roboto Medium"; 
+ }
+
+ h1 {
+ /* h1 для catalog. 
+ В index заголовок другой, семантически не h1*/
+/* Типографика */
+  font-size: 40px;
+  line-height: auto;
+  color: #000; 
+  font-family: "Roboto Medium"; 
+ }
+
+ h2 {
+/* Типографика*/ 
+  font-size: 18px;
+  line-height: 30px;
+  color: #000; 
+  font-family: "Roboto Medium";
+  text-transform: uppercase; 
+ }
