@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
 			<div class="container">
-				<div class="header-top">
+				<div class="header-top clearfix">
 					<div class="logo">
 						<img src="img/logo.png" width="139" height="56" alt="логотип Нёрдс">
 					</div>
@@ -24,17 +25,19 @@
           				<a class="basket" href="#">Корзина</a>
         			</div>
 				</div>
-				<div class="promo">
-					<h1>Долго, дорого, скурпулезно.</h1>
-					<p>Математически выверенный дизайн <br> 
+				<div class="promo clearfix">
+                    <div class="promo-text">
+                        <h2>Долго, дорого, скурпулезно.</h2>
+					       <p>Математически выверенный дизайн <br> 
 					   для вашего сайта или мобильного приложения.</p>
-					<a href="#">Узнать больше</a>
+					   <a href="#">Узнать больше</a>
+                    </div>
 					<img src="img/promo.png" width="338" height="231" alt="рекламное изображение">
 				</div>
 			</div>	
 		</header>
-		<main class="container">
-			<section class="features">
+      <main class="container">
+			<section class="features clearfix">
 				<div class="websites">
 					<img src="img/features-websites.png" width="240" height="124" alt="изображение ноутбука">
 					<h2>Веб-сайты</h2>
@@ -55,14 +58,14 @@
 				</div>
 			</section>
 			<section class="about">
-				<div>
-					<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+				<div class="about-text">
+					<p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 				</div>
 				<div class="second-logo">
 						<img src="img/second-logo.png" width="187" height="75" alt="логотип">
 				</div>
-				<div>
+				<div class="orders">
 					<h3>Выполняем заказы на разработку:</h3>
 					<ul>
 						<li>Веб-сайтов любой сложности</li>
@@ -70,7 +73,7 @@
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</div>
-				<div>
+				<div class="mode">
 					<h3>Как мы работаем:</h3>
 					<ul>
 						<li>С самоотдачей 146%</li>
@@ -94,7 +97,6 @@
 			</section>
 		</main>
 		<footer class="main-footer">
-			<div class="container">
 				<div class="footer-top">
 					<iframe src="" width="100" height="100"></iframe>
 					<div class="contacts">
@@ -105,6 +107,7 @@
 					</div>
 					<img src="img/mark.png" width="231" height="190" alt="отметка на карте">
 				</div>
+              <div class="container">  
 				<div class="footer-bottom">
 					<div class="footer-social">
 						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -112,7 +115,7 @@
           				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 					</div>
 					<div class="footer-text">
-						<b>Давайте дружить, это выгодно!</b>
+						<p>Давайте дружить, это выгодно!</p>
 						<p>Скидка 10% для друзей из социальных сетей.</p>
 					</div>
 				</div>

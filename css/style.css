@@ -1,26 +1,283 @@
 body {
-/* Типографика*/ 
+    /*задник для главной:
+    background: url("../img/fon.jpg") no-repeat center top;*/
+    /*задник для каталога: 
+    background: url("../img/catalog.jpg") no-repeat center top;  */
+    
+    /* Блочная модель */
+    margin: 0px auto;
+    width: 1200px;
+  
+    /* Типографика*/
   font-size: 16px;
   line-height: 22px;
   color: #283136; 
-  font-family: "Roboto Medium"; 
+  font-family: "Roboto Medium", sans-serif;    
  }
 
- h1 {
- /* h1 для catalog. 
- В index заголовок другой, семантически не h1*/
-/* Типографика */
+h1{
+/* Типографика*/
   font-size: 40px;
   line-height: auto;
-  color: #000; 
-  font-family: "Roboto Medium"; 
+  color: black; 
+  font-family: "Roboto Medium", sans-serif; 
+    margin-top: 0px;
  }
 
  h2 {
-/* Типографика*/ 
+/* Типографика */
   font-size: 18px;
   line-height: 30px;
   color: #000; 
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium", sans-serif; 
   text-transform: uppercase; 
  }
+
+
+.container {
+    width: 900px;
+    margin: 0px auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HEADER */
+.main-header {
+    margin: 0px auto;
+}
+
+.logo {
+    margin: 30px 100px 0px 10px;
+    float: left;
+}
+
+.main-menu {
+    float: left;
+    width: 500px;
+    margin-top: 40px;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-menu ul {
+    text-align: right;
+}
+
+.user-block {
+    float: right;
+    margin-top: 50px;
+    width: 110px;
+    min-height: 30px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.welcome {
+    min-height: 235px;
+    margin-bottom: 0px;
+}
+
+
+/*INDEX PROMO*/
+.promo {
+    min-height: 340px;
+}
+
+.promo-text {
+    float: left;
+    width: 380px;
+    margin: 60px 0px 80px 10px;
+    height: 200px;
+}
+
+.promo img {
+    float: right;
+    margin: 40px 10px 0px 0px;
+}
+
+/*INDEX FEATURES*/
+.features .websites {
+    float: left;
+    width: 240px;
+    margin: 80px 80px 80px 10px;
+    min-height: 300px;
+}
+
+.features .apps {
+    float: left;
+    width: 240px;
+    margin: 80px 80px 80px 0px;
+    min-height: 300px;
+}
+
+.features .presentations {
+    float: right;
+    width: 240px;
+    margin: 80px 10px 80px 0px;
+    min-height: 300px;
+}
+
+/*INDEX ABOUT*/
+.about-text {
+    display: inline-block;
+    width: 580px;
+    min-height: 140px;
+    margin:70px 85px 35px 10px;
+}
+
+.second-logo  {
+    display: inline-block;
+    margin-top: 60px;
+    vertical-align: top;
+}
+
+.orders {
+    display: inline-block;
+    width: 460px;
+    min-height: 160px;
+    margin: 0px 160px 65px 10px;
+}
+
+.mode {
+    display: inline-block;
+    width: 240px;
+    min-height: 160px;
+}
+
+/*INDEX PARTNERS*/
+.partners {
+    min-height: 250px;
+}
+
+.small-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.glukhanko {
+    margin: 50px 120px 60px 20px;
+}
+
+.academy {
+    margin-right: 120px;
+}
+
+/*CATALOG CATALOG*/
+.main-catalog {
+    min-height: 1285px;
+}
+
+.search {
+    float: left;
+    margin:70px 80px 0px 10px;
+    width: 240px;
+    min-height: 740px;
+}
+
+.gallery {
+    float: right;
+    width: 570px;
+    min-height: 1285px;
+}
+
+.sorting {
+    margin-top: 75px;
+}
+
+.sorting p, .sorting button, .sorting div {
+    display: inline-block;
+    margin-bottom: 
+}
+
+.product {
+    display: inline-block;
+    margin-bottom: 80px;
+    min-height: 270px;
+}
+
+.product:nth-child(odd) { 
+    margin-right: 80px;
+}
+
+.gall-nav {
+    width: 280px;
+    min-height: 35px;
+}
+
+/*FOOTER*/
+.footer-top {
+    min-height: 410px;
+}
+
+.contacts {
+    width: 250px;
+    min-height: 240px;
+    margin-top: 85px;
+    margin-left: 160px;
+    float: left;
+}
+
+.footer-top img {
+    margin-top: 110px;
+    margin-right: 130px;
+    float: right;
+}
+
+.footer-bottom {
+    min-height: 215px;
+}
+
+.footer-social {
+    float:left;
+    display: block;
+    width: 240px;
+    margin: 80px 0px 75px 10px;
+}
+
+.footer-text {
+   float: right; 
+    width: 550px;
+    margin: 75px 30px 65px 0px;
+}
+
+
+
+/*ВСПОМОГАТЕЛЬНЫЕ ПОДСВЕТКИ:
+.body {outline: 2px solid blue;}
+.container {outline: 2px solid red;}
+.main-header {outline: 5px solid gray;}
+.header-top {outline: 5px solid pink;}
+.logo {outline: 2px solid green;}
+.main-menu {outline: 2px solid green;}
+.user-block {outline: 2px solid green;}
+.welcome {outline: 5px solid lime;}
+.promo {outline: 2px solid pink;}
+.promo-text {outline: 2px solid orange;}
+.promo img {outline: 2px solid yellow;}
+.features {outline: 4px solid lime;}
+.features .websites {outline: 2px solid yellow;}
+.features .apps {outline: 2px solid yellow;}
+.features .presentations {outline: 2px solid yellow;}
+.about {outline: 5px solid navy;}
+.about-text {outline: 2px solid blue;}
+.second-logo  {outline: 2px solid red;}
+.orders {outline: 2px solid purple;}
+.mode {outline: 2px solid purple;}
+.partners {outline: 4px solid purple;}
+.small-logo {outline: 3px solid pink;}
+.search {outline: 3px solid green;}
+.gallery {outline: 3px solid brown;}
+.product {outline: 3px solid pink;}
+.gall-nav {outline: 3px solid red;}
+.footer-top {outline: 3px solid green;}
+.contacts, .footer-top img {outline: 3px solid green;}
+.footer-social {outline: 3px solid green;}
+.footer-text {outline: 3px solid green;}
+*/

@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Любовь Гулько](https://up.htmlacademy.ru/htmlcss/14/user/168138).
-* Наставник:[Евгений Котов](https://htmlacademy.ru/profile/id25083).
+* Наставник:[Константин Барабаш](https://htmlacademy.ru/profile/id37967).
 
 ---
 
