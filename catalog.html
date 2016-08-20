@@ -26,65 +26,67 @@
           				<a class="basket" href="#">Корзина</a>
         			</div>
 				</div>
-                <div  class="welcome">
-                    <h1>Добро пожаловать в магазин готовых макетов</h1>
+                <div class="welcome-block">
+                    <p class="welcome">Добро пожаловать в магазин готовых макетов</p>
                 </div>
-                
 			</div>
 		</header>
 		<main class="main-catalog">
             <div class="container clearfix">
                 <section class="search">
 				<form action="/echo" method="post">
-					 <div class="range">
-						<input type="range" min="" max="" name="range" id="range-field">
-						<input type="number" name="from" id="from-field">
-						<input type="number" name="to" id="to-field">					
-
-						<label for="range-field">Стоимость:</label>
-						<label for="from-field">от</label>
-						<label for="to-field">до</label>
-					 </div>
+					 <div class="range-filter">
+                        <p>Стоимость:</p>
+                        <div class="range-controls">
+			                 <div class="scale">
+				                <div class="bar" style="margin-left:10px;width:140px;"></div>
+			                 </div>
+			                 <div class="toggle min-toggle"></div>
+			                 <div class="toggle max-toggle"></div>
+			             </div>
+			             <div class="price-controls">
+				            от <input class="min-price" type="text" value="5 000">
+				            до <input class="max-price" type="text" value="15 000">
+			             </div>
+		              </div>
 				 	<h2>Сетка:</h2>
 					<label>
 						<input type="radio" name="net-type" value="Adaptive" checked>
-						Адаптивная
+						<span>Адаптивная</span>
 					</label>
 					<label>
 						<input type="radio" name="net-type" value="Fixed">
-						Фиксированная
+						<span>Фиксированная</span>
 					</label>
 					<label>
 						<input type="radio" name="net-type" value="Rubber">
-						Резиновая
+						<span>Резиновая</span>
 					</label>
 
 					<h2>Особенности:</h2>
 					<div>
 						<input type="checkbox" name="slider" id="slider-field" checked>
+                        <label for="slider-field">Слайдер</label>
 						<input type="checkbox" name="advantages" id="advantages-field">
+                        <label for="advantages-field">Блок преимуществ</label>
 						<input type="checkbox" name="news" id="news-field" checked>
+                        <label for="news-field">Новости</label>
 						<input type="checkbox" name="gallery" id="gallery-field">
+                        <label for="gallery-field">Галерея</label>
 						<input type="checkbox" name="basket" id="basket-field">
+                        <label for="basket-field">Корзина</label>
 					</div>
-					<div>
-						<label for="slider-field">Слайдер</label>
-						<label for="advantages-field">Блок преимуществ</label>
-						<label for="news-field">Новости</label>
-						<label for="gallery-field">Галерея</label>
-						<label for="basket-field">Корзина</label>
-					</div>
-					<a href="#">Показать</a>
+                    <input type="submit" value="показать">
 				</form>
                 </section>
             <section class="gallery">
 				<div class="sorting">
 					<p>Сортировать:</p>
-					<button type="button" name="price">по цене</button>
-					<button type="button" name="type">по типу</button>
-					<button type="button" name="function">по функционалу</button>
-					<div class="bottom"></div>
-					<div class="up"> </div>
+                    <a href="#">по цене</a>
+                    <a href="#">по типу</a>
+                    <a href="#">по функционалу</a>
+					<a class="bottom" href="#"></a>
+					<a class="up" href="#"> </a>
 				</div>
 				<div class="articles">
 					<article class="product">
@@ -106,27 +108,27 @@
 						<img src="img/dovetail.jpg" width="239" height="240" alt=" ">
 					</article>
 				</div>
-				<div class="gall-nav">
-					<button type="button">1</button>
-					<button type="button">2</button>
-					<button type="button">3</button>
-					<button type="button">следующая</button>
+				<div class="paginator">
+                    <a class="here">1</a>
+                    <a href="#2">2</a>
+                    <a href="#3">3</a>
+                    <a href="#4">следующая</a>
 				</div>
                 </section>
             </div>
 		</main>
 		<footer class="main-footer">
 				<div class="footer-top">
-					<iframe src="" width="100" height="100"></iframe>
-					<div class="contacts">
-						<h3>Nёrd's design studio</h3>
-						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-						<p>тел. +7 (812) 275-75-75</p>
-						<button>Напишите нам</button>
-					</div>
-					<img src="img/mark.png" width="231" height="190" alt="отметка на карте">
-				</div>
-              <div class="container">  
+                    <div class="container"> 
+					   <div class="contacts">
+						  <h3>Nёrd's design studio</h3>
+						  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+						  <p>тел. +7 (812) 275-75-75</p>
+						  <button>Напишите нам</button>
+					   </div>
+                    </div>
+                </div>
+            <div class="container"> 
 				<div class="footer-bottom">
 					<div class="footer-social">
 						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
