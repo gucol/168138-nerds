@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
@@ -27,10 +28,11 @@
 				</div>
 				<div class="promo clearfix">
                     <div class="promo-text">
-                        <h2>Долго, дорого, скурпулезно.</h2>
+                        <b>Долго, дорого, 
+                        	<br>скурпулезно.</b>
 					       <p>Математически выверенный дизайн <br> 
 					   для вашего сайта или мобильного приложения.</p>
-					   <a href="#">Узнать больше</a>
+					   <a class="btn promo-btn" href="#">Узнать больше</a>
                     </div>
                     <div class="slider">
                     	<div class="slider-nav">
@@ -47,28 +49,28 @@
 		</header>
       <main class="container">
 			<section class="features clearfix">
-				<div class="websites feature">
+				<div class="feature">
 					<img src="img/features-websites.png" width="240" height="124" alt="изображение ноутбука">
 					<h2>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a href="">Заказать</a>
+					<a class="btn" href="">Заказать</a>
 				</div>
-				<div class="apps feature">
+				<div class="feature">
 					<img src="img/features-apps.png" width="240" height="124" alt="изображение телефона">
 					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a href="">Заказать</a>
+					<a class="btn btn-apps" href="">Заказать</a>
 				</div>
-				<div class="presentations feature">
+				<div class="feature">
 					<img src="img/features-presentations.png" width="240" height="124"  alt="изображение плаката с презентацией">
 					<h2>Презентации</h2>
 					<p>Вы даже не подозреваете насколько вы изумительны!</p>
-					<a href="">Заказать</a>
+					<a class="btn btn-pres" href="">Заказать</a>
 				</div>
 			</section>
-			<section class="about claerfix">
+			<section class="about clearfix">
 				<div class="column1">
-                    <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+                    <b>Мы - маленькая, но гордая <br> дизайн-студия из Краснодара.</b>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
                     <h3>Выполняем заказы на разработку:</h3>
 					<ul>
@@ -88,17 +90,15 @@
                 </div>
 			</section>
 			<section class="partners">
-				<hr>
-				<a class="small-logo glukhanko" href="#">
+				<a class="small-logo" href="#">
 					<img src="img/glukhanko.png" width="198" height="37" alt="логотип glukhanko">
 				</a>
-				<a class="small-logo academy" href="#">
+				<a class="small-logo" href="#">
 					<img src="img/academy.png" width="199" height="68" alt="логотип html-academy">
 				</a>
-				<a class="small-logo borodinski" href="#">
+				<a class="small-logo" href="#">
 					<img src="img/borodinski.png" width="209" height="86" alt="логотип borodinski">
 				</a>
-				<hr>
 			</section>
 		</main>
 		<footer class="main-footer">
@@ -108,23 +108,21 @@
 						  <h3>Nёrd's design studio</h3>
 						  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
 						  <p>тел. +7 (812) 275-75-75</p>
-						  <button>Напишите нам</button>
+						  <a class="btn cont-btn" href="#">Напишите нам</a>
 					   </div>
                     </div>
                 </div>
-            <div class="container"> 
-				<div class="footer-bottom">
+				<div class="footer-bottom container">
 					<div class="footer-social">
 						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 					</div>
 					<div class="footer-text">
-						<p>Давайте дружить, это выгодно!</p>
+						<b>Давайте дружить, это выгодно!</b>
 						<p>Скидка 10% для друзей из социальных сетей.</p>
 					</div>
 				</div>
-			</div>
 		</footer>
   </body>
 </html>

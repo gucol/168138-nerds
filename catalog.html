@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Nёrd's. Магазин.</title>
-		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic" rel="stylesheet"> 
+    	<link href="css/normalize.css" rel="stylesheet">
+    	<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -27,7 +29,7 @@
         			</div>
 				</div>
                 <div class="welcome-block">
-                    <p class="welcome">Добро пожаловать в магазин готовых макетов</p>
+                    <p class="welcome">Добро пожаловать в магазин<br>готовых макетов</p>
                 </div>
 			</div>
 		</header>
@@ -54,10 +56,12 @@
 						<input type="radio" name="net-type" value="Adaptive" checked>
 						<span>Адаптивная</span>
 					</label>
+					<br>
 					<label>
 						<input type="radio" name="net-type" value="Fixed">
 						<span>Фиксированная</span>
 					</label>
+					<br>
 					<label>
 						<input type="radio" name="net-type" value="Rubber">
 						<span>Резиновая</span>
@@ -65,16 +69,26 @@
 
 					<h2>Особенности:</h2>
 					<div>
-						<input type="checkbox" name="slider" id="slider-field" checked>
-                        <label for="slider-field">Слайдер</label>
-						<input type="checkbox" name="advantages" id="advantages-field">
-                        <label for="advantages-field">Блок преимуществ</label>
-						<input type="checkbox" name="news" id="news-field" checked>
-                        <label for="news-field">Новости</label>
-						<input type="checkbox" name="gallery" id="gallery-field">
-                        <label for="gallery-field">Галерея</label>
-						<input type="checkbox" name="basket" id="basket-field">
-                        <label for="basket-field">Корзина</label>
+						<div class="form-group">
+							<input type="checkbox" name="slider" id="slider-field" checked>
+                        	<label for="slider-field">Слайдер</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" name="advantages" id="advantages-field">
+                        	<label for="advantages-field">Блок преимуществ</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" name="news" id="news-field" checked>
+                        	<label for="news-field">Новости</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" name="gallery" id="gallery-field">
+                        	<label for="gallery-field">Галерея</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" name="basket" id="basket-field">
+                        	<label for="basket-field">Корзина</label>
+						</div>
 					</div>
                     <input type="submit" value="показать">
 				</form>
@@ -109,7 +123,7 @@
 					</article>
 				</div>
 				<div class="paginator">
-                    <a class="here">1</a>
+                    <a class="active">1</a>
                     <a href="#2">2</a>
                     <a href="#3">3</a>
                     <a href="#4">следующая</a>
