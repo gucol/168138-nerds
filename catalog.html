@@ -11,16 +11,12 @@
 		<header class="main-header">
 			<div class="container">
 				<div class="header-top clearfix">
-					<div class="logo">
-						<a href="">
-							<img src="img/logo.png" width="139" height="56" alt="логотип Нёрдс">
-						</a>	
-					</div>
+					<a class="a-logo" href="index.html" title="логотип Нёрдс"></a>	
 					<nav class="main-menu">
 						<ul>
    							<li><a href="#">Студия</a></li>
 							<li><a href="#">Клиенты</a></li>
-							<li><a href="#">Магазин</a></li>
+							<li><a href="catalog.html">Магазин</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
@@ -47,28 +43,36 @@
 			                 <div class="toggle max-toggle"></div>
 			             </div>
 			             <div class="price-controls">
-				            от <input class="min-price" type="text" value="5 000">
-				            до <input class="max-price" type="text" value="15 000">
+				            OТ <input class="min-price" type="text" value="0">
+				            ДО <input class="max-price" type="text" value="15 000">
 			             </div>
 		              </div>
-				 	<h2>Сетка:</h2>
-					<label>
-						<input type="radio" name="net-type" value="Adaptive" checked>
-						<span>Адаптивная</span>
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="net-type" value="Fixed">
-						<span>Фиксированная</span>
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="net-type" value="Rubber">
-						<span>Резиновая</span>
-					</label>
 
+				 	<h2>Сетка:</h2>
+				 	<div class="group-1">
+				 		<div class="form-group">
+				 		<label>
+							<input type="radio" name="net-type" value="Adaptive" checked>
+							<span>Адаптивная</span>
+						</label>
+				 	</div>
+					<div class="form-group">
+						<label>
+							<input type="radio" name="net-type" value="Fixed">
+							<span>Фиксированная</span>
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="radio" name="net-type" value="Rubber">
+						<span>Резиновая</span>
+						</label>
+					</div>
+				 	</div>
+				 	
+					
 					<h2>Особенности:</h2>
-					<div>
+					<div class="group-2">
 						<div class="form-group">
 							<input type="checkbox" name="slider" id="slider-field" checked>
                         	<label for="slider-field">Слайдер</label>
@@ -90,7 +94,7 @@
                         	<label for="basket-field">Корзина</label>
 						</div>
 					</div>
-                    <input type="submit" value="показать">
+                    <input class="btn btn-form" type="submit" value="показать">
 				</form>
                 </section>
             <section class="gallery">
@@ -99,27 +103,54 @@
                     <a href="#">по цене</a>
                     <a href="#">по типу</a>
                     <a href="#">по функционалу</a>
-					<a class="bottom" href="#"></a>
-					<a class="up" href="#"> </a>
+                    <div class="pointers">
+                    	<a class="arrow bottom active" href="#">по возрастанию</a>
+						<a class="arrow up" href="#">по убыванию</a>
+                    </div>
 				</div>
 				<div class="articles">
 					<article class="product">
 						<img src="img/aviator.jpg" width="240" height="240" alt=" ">
+						<div class="description">
+							<p class="name">AVIATOR</p>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="btn" href="#">8000 Р.</a>
+						</div>
 					</article>
 					<article class="product">
 						<img src="img/sunset.jpg" width="240" height="240" alt=" ">
+						<div class="description">
+							<p class="name">AVIATOR</p>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="btn" href="#">8000 Р.</a>
 					</article>
 					<article class="product">
 						<img src="img/forte.jpg" width="240" height="240" alt=" ">
+						<div class="description">
+							<p class="name">AVIATOR</p>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="btn" href="#">8000 Р.</a>
 					</article>
 					<article class="product">
 						<img src="img/thai.jpg" width="240" height="240" alt=" ">
+						<div class="description">
+							<p class="name">AVIATOR</p>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="btn" href="#">8000 Р.</a>
 					</article>
 					<article class="product">
 						<img src="img/avenue.jpg" width="239" height="240" alt=" ">
+						<div class="description">
+							<p class="name">AVIATOR</p>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="btn" href="#">8000 Р.</a>
 					</article>
 					<article class="product">
 						<img src="img/dovetail.jpg" width="239" height="240" alt=" ">
+						<div class="description">
+							<p class="name">AVIATOR</p>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="btn" href="#">8000 Р.</a>
 					</article>
 				</div>
 				<div class="paginator">
@@ -138,23 +169,21 @@
 						  <h3>Nёrd's design studio</h3>
 						  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
 						  <p>тел. +7 (812) 275-75-75</p>
-						  <button>Напишите нам</button>
+						  <a class="btn cont-btn pink" href="#">Напишите нам</a>
 					   </div>
                     </div>
                 </div>
-            <div class="container"> 
-				<div class="footer-bottom">
+				<div class="footer-bottom container">
 					<div class="footer-social">
 						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 					</div>
 					<div class="footer-text">
-						<p>Давайте дружить, это выгодно!</p>
+						<b>Давайте дружить, это выгодно!</b>
 						<p>Скидка 10% для друзей из социальных сетей.</p>
 					</div>
 				</div>
-			</div>
 		</footer>
 	</body>
 </html>
