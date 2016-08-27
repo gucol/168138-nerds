@@ -1,39 +1,33 @@
 body {
-    /*задник для главной:
-    background: url("../img/fon.jpg") no-repeat center top;*/
-    /*задник для каталога:  
-    background: url("../img/catalog.jpg") no-repeat center top; */
-    
-    /* Блочная модель */
     margin: 0px auto;
     min-width: 900px;
   
-    /* Типографика*/
-  font-size: 16px;
-  line-height: 22px;
-  color: #283136; 
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;   
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136; 
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;   
  }
 
 h1{
-/* Типографика*/
-  font-size: 40px;
-  line-height: auto;
-  color: #283136; 
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;  
     margin-top: 0px;
+
+    font-size: 40px;
+    line-height: auto;
+    color: #283136; 
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;  
  }
 
  h2 {
-/* Типографика */
-  font-size: 18px;
-  line-height: 30px;
-  color: #000; 
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;  
-  text-transform: uppercase; 
+    margin-top: 0px; 
+
+    font-size: 18px;
+    line-height: 30px;
+    color: #000; 
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;  
+    text-transform: uppercase;
  }
 
 h3 {
@@ -51,12 +45,9 @@ b {
     line-height: 36px;
 }
 
-
 .container {
     width: 900px;
     margin: 0px auto;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .clearfix::after {
@@ -87,6 +78,7 @@ b {
 .pink {
     background-color: #fb565a; 
 }
+
 .pink:hover {
     background-color: #d6494d; 
 }
@@ -122,7 +114,6 @@ b {
     border-top: 2px solid #a3841f;
 }
 
-
 /* HEADER */
 .main-header {
     margin: 0px auto;
@@ -146,7 +137,7 @@ b {
 
 .main-menu {
     float: left;
-    width: 570px;   
+    width: 600px;   
 }
 
 .main-menu ul {
@@ -157,8 +148,8 @@ b {
 }
 .main-menu li {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
+    padding: 10px 21px;
+    margin-top: 20px;
 }
 
 .main-menu a {
@@ -187,8 +178,8 @@ b {
 
 .user-block {
     float: right;
-    width: 110px;
-    margin-top: 15px;
+    width: 113px;
+    margin-top: 18px;
 }
 
 .basket {
@@ -217,20 +208,31 @@ b {
     height: 15px;
 
     background: #eee url("../img/sprite.png") 0px 0px;
+    opacity: 1;
 }
 
 .basket:hover {
     color: #fb565a;
 }
 
+.basket:hover::before{
+    background: #eee url("../img/sprite.png") 0px 15px;
+}
+
 .basket:active {
     color: #8f8f8f;
+}
+.basket:active::before{
+    background: #eee url("../img/sprite.png") 0px 0px;
+    opacity: 0.3;
 }
 
 .basket .active {
     border-bottom: 2px solid #fb565a;
 }
-
+.basket::before .active {
+    border-bottom: 2px solid #fb565a;
+}
 .welcome-block {
     margin-bottom: 0px;
 }
@@ -238,123 +240,139 @@ b {
 .welcome {
     display: inline-block;
     text-align: center;
-    margin: 60px 100px 80px; 
+    margin: 53px 108px 80px; 
     
-    /* Типографика*/
     font-size: 40px;
     line-height: 50px;
     color: black; 
     font-family: "Roboto", "Arial", sans-serif; 
     font-weight: 500;
     text-transform: uppercase; 
+    letter-spacing: 0.2px;
 }
-
 
 /*INDEX PROMO*/
-
 .slider {
-  width: 880px;
-  margin: 0 auto;
-  position: relative;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
 }
-.slide {
-  min-height: 310px;
 
-  background-repeat: no-repeat;
-  background-position: 100% 10px;
+.slide {
+    background-repeat: no-repeat;
+    background-position: 540px 41px;
 }
 
 .slider input[type="radio"] {
-  display: none;
+    display: none;
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 95px;
-  left: 50%;
+    position: absolute;
+    bottom: 80px;
+    left: 428px;
+    margin-left: -100px;
     width: 200px;
-  margin-left: -100px;
-
-  text-align: center;
+    text-align: center;
 }
 
 .slider-controls label {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin: 0 3px;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
 
-  vertical-align: top;
+    vertical-align: top;
 
-  background: #fff;
-  border: 3px solid white;
-  border-radius: 50%;
-  cursor: pointer;
+    background: #fff;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .slide-text {
-  width: 500px;
-  padding: 30px 0;
+    width: 500px;
+    padding: 63px 0px 80px;
 }
 
 .slide p {
-  color: #283136;
+    color: #283136;
 }
 
 .slide .btn {
-  display: block;
-  width: 220px;
-  margin-top: 25px;
-  padding: 12px 10px;
+    display: block;
+    width: 220px;
+    margin-top: 28px;
+    padding: 10px 10px;
 
-  font-weight: 300;
-  text-align: center;
+    font-weight: 300;
+    text-align: center;
 }
 
 .slide:nth-child(1) {
-  background-image: url("../img/slider-1.png");
+    background-image: url("../img/slider-1.png");
 }
 
 .slide:nth-child(2) {
-  background-image: url("../img/slider-2.png");
+    background-image: url("../img/slider-2.png");
 }
 
 .slide:nth-child(3) {
-  background-image: url("../img/slider-3.png");
+    background-image: url("../img/slider-3.png");
 }
 
 .slide {
-  display: none;
+    display: none;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-  display: block;
+    display: block;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-  display: block;
+    display: block;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
-  display: block;
+    display: block;
 }
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background: #c1c1c1;
+    background: #c1c1c1;
 }
 
-/*INDEX FEATURES*/
+/*INDEX*/
+/*index features*/
 .features {
     padding: 80px 0;
     border-bottom: 2px solid #eee;
 }
+
 .feature {
     float: left;
     width: 240px;
-    margin-right: 80px;
+    margin-right: 79px;
     min-height: 300px;
 }
+
+.feature h2 {
+    margin-top: 17px;
+}
+
+.feature p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #283136; 
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;   
+}
+
+.feature .btn {
+    margin-top: 10px;
+}
+
 .feature:last-child {
     margin-right: 0px;
 }
@@ -367,30 +385,38 @@ b {
     background: #efc84a;
 }
 
-/*INDEX ABOUT*/
+/*index about*/
 .about {
-    padding-top: 55px;
-    padding-bottom: 70px;
+    padding-top: 58px;
+    padding-bottom: 45px;
     box-sizing: border-box;
 }
 
 .column1 {
     float: left;
     width: 600px;
+    padding-top: 11px;
 }
 
-.column1 p {
-    margin-bottom: 40px;
+.column1 h3,
+.column2 h3 {
+    margin-bottom: 22px;
 }
+.column1 p {
+    margin-top: 18px;
+    margin-bottom: 45px;
+}
+
 .about ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .about li {
     position: relative;
     padding-left: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 
     font-size: 16px;
     line-height: 22px;
@@ -412,16 +438,17 @@ b {
 .column2 {
     float: right;
     width: 240px;
+    padding-right: 20px;
 }
 
 .column2 img {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-/*INDEX PARTNERS*/
+/*index partners*/
 .partners {
-    padding-top: 40px;
-    padding-bottom: 30px; 
+    padding-top: 48px;
+    padding-bottom: 28px; 
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
 }
@@ -454,33 +481,27 @@ b {
     background: url("../img/borodinski-active.png") no-repeat 50%;
 }
 
-
-
 .small-logo:nth-child(3n) {
     margin-right: 0px;
 }
 
-/*CATALOG CATALOG*/
-.main-catalog {
-    min-height: 1285px;
-}
-
+/*CATALOG*/
+/*catalog search*/
 .search {
     float: left;
     width: 240px;
-    margin:70px 70px 0px 10px;
-    min-height: 740px;
+    margin:75px 70px 0px 0px;
 }
 
 form {
     width: 240px;
 }
-/*бегунок */
+
+    /*бегунок */
 .range-filter {
-    padding-top:10px;
-    width:230px;
-    margin-bottom:10px;
+    width:240px;
 }
+
 .range-controls {
     position:relative;
     height:80px;
@@ -490,21 +511,25 @@ form {
     border-radius:5px;
     overflow:hidden;
 }
+
 .scale {
     margin-top:39px;
     height:2px;
     background:#d7dcde;
 }
+
 .bar {
     height:2px;
     background:#00ca74;
 }
+
 .toggle {
     position:absolute;
     top:30px;
     left:30px;
     width:4px;
     height:4px;
+
     border:8px solid white;
     background:#ababab;
     cursor:pointer;
@@ -518,12 +543,15 @@ form {
 .min-toggle {
     left:30px;
 }
+
 .price-controls {
-    margin-bottom: 50px;
+    margin-bottom: 43px;
 }
+
 .min-price, .max-price {
     width: 78px;
     height: 36px;
+
     border: none;
     border-radius: 3px;
     background: #f1f1f1;
@@ -532,15 +560,17 @@ form {
     vertical-align: middle;
     margin-left: 5px;
 }
+
 .min-price {
-    margin-right: 5px;
+    margin-right: 14px;
 }
 
-/*чек-боксы, радио и кнопка*/
+    /*чек-боксы, радио и кнопка*/
 .form-group {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
+
 .form-group input[type="radio"],
 input[type="checkbox"] {
   display: none;
@@ -549,102 +579,179 @@ input[type="checkbox"] {
 .form-group label {
     padding-left: 35px;
 }
+
 .group-1 {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
 }
-.group-1 label::before {
+
+.group-1 label::before,
+.group-1 label::after {
     content: "";
     position: absolute;
-    top: -3px;
-    left: 3px;
-    width: 20px;
-    height: 20px;
-    border: 3px solid #c1c1c1;
     border-radius: 50%;
     cursor: pointer;
 }
-.group-2 {
-    margin-bottom: 50px;
-}
-.group-2 label::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: 3px;
+.group-1 label::before {
+    top: -4px;
+    left: -1px;
     width: 20px;
     height: 20px;
-    border: 2px solid #c1c1c1;
+    border: 3px solid #c1c1c1;
+}
+
+.group-1 label::after {
+    display: none;
+    top: 4px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    background-color: #c1c1c1;
+}
+
+.group-2 {
+    margin-bottom: 58px;
+}
+
+.group-2 label::after,
+.group-2 label::before {
+   content: "";
+    position: absolute; 
     border-radius: 5px;
     cursor: pointer;
 }
+
+.group-2 label::before {
+    top: -2px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c1c1c1;
+}
+
+.group-2 label::after {
+    display: none;
+    top: 3px;
+    left: 3px;
+    width: 17px;
+    height: 7px;
+    border: 5px solid #c1c1c1;   
+}
+
+.group-1 input[type="radio"]:checked ~ label::after {
+    display: block;
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.group-2 input[type="checkbox"]:checked ~ label::after {
+    display: block;
+    border-top-style: none;
+    border-right-style: none;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(-45deg);
+}
+
 .btn-form {
+    width: 155px;
     background-color: #f1f1f1;
     color: #000;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
 }
-/*галерея*/
+
+/*catalog gallery*/
 .gallery {
     float: right;
-    width: 570px;
-    min-height: 1285px;
+    width: 580px;
 }
-/*сортировка*/
+
+    /*настройки поиска*/
 .sorting {
     position: relative;
-    margin-top: 75px;
-    margin-bottom: 25px;
+    margin-top: 68px;
+    margin-bottom: 24px;
+
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
-
 }
+
 .sorting p{
     display: inline-block;
-    
+    margin-right: 14px;
 }
+
 .sorting a {
     display: inline-block;
-    margin: 5px 25px;
+    margin: 0px 22px;
+
     color: #dbdbdb;
     text-decoration: none;
     border-bottom: 2px dotted #00ca74;
 }
+
 .sorting a:hover {
     color: #000;
     border-bottom:2px solid #00ca74;
 }
+
 .sorting a:active {
     color: #000;
     border-bottom: none;
 }
+
 .sorting .pointers {
     float: right;
-    margin: 10px;
+    margin-right: 17px;
+    margin-top: 13px;
 }
+
 .sorting .arrow {
     font-size: 0px;
     border-bottom: none;
-    margin: 0px;
+    margin: 3px;
 }
-.sorting .arrow::before:active {
-    background-color: #000;
-}
+
 .arrow::before {
     content: "";
     display: inline-block;
+
     border: 10px solid #c1c1c1;
     border-left-width: 5px;
     border-right-width: 5px;
     border-right-color: transparent;
     border-left-color: transparent;
 }
+
 .bottom::before {
     border-bottom-width: 0px; 
 }
+
 .up::before {
     border-top-width: 0px;
 }
 
-/*страницы товара*/
+.pointers a:hover {
+    border-bottom:none;
+}
+
+.bottom:active::before {
+    border-top-color: #000;
+}
+
+.up:active::before {
+    border-bottom-color: #000;
+}
+
+.active::before {
+    border-top-color: #00ca74;
+}
+
+
+    /*страницы товара*/
 .articles {
     font-size: 0px;
 }
@@ -652,110 +759,138 @@ input[type="checkbox"] {
 .product {
     position: relative;
     display: inline-block;
-    margin-bottom: 80px;
-    min-height: 270px;
+    margin-bottom: 85px;
+    padding-top: 14px;
     font-size: 0px;
-    padding-top: 30px;
 }
+
 .product::before {
     position: absolute;
     content: "";
-    top: 0px;
+    top: -16px;
     left: 0px;
     width: 240px;
     height: 30px;
+
     background-color: #f1f1f1;
     border-radius: 5px 5px 0px 0px; 
 }
+
 .description {
     display: none;
     box-sizing: border-box;
     position: absolute;
     content: "";
-    padding: 35px 20px 30px;
-    top: 50px;
+    padding: 30px 20px 30px;
+    top: 34px;
     left: 20px;
     width: 200px;
     height: 200px;
     background-color: #fff;
 }
+
 .description .name {
+    margin-top: 5px;
+    margin-bottom: 14px;
+
     font-size: 18px;
-  line-height: 9px;
-  color: #000; 
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;  
-  text-transform: uppercase; 
-  text-align: center;
+    line-height: 18px;
+    color: #000; 
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;  
+    text-transform: uppercase; 
+    text-align: center;
 }
+
 .description p {
     font-size: 14px;
-  line-height: 18px;
-  color: #283136; 
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;  
-  text-align: center;
+    line-height: 18px;
+    color: #283136; 
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;  
+    text-align: center;
 }
+
 .description a {
-    padding: 10px 40px;
-    margin-left: 18px;
+    padding: 10px 42px;
+    margin-left: 9px;
+    margin-top: 14px;
+    font-size: 16px;
 }
+
 .product:hover .description {
+    display: block;
+}
+
+.active {
     display: block;
 }
 
 .description .btn:hover {
     background-color: #d6494d; 
 }
+
 .description .btn:active {
     background-color: #b63538;
     border-top: 3px solid #9b2d30;
 }
+
 .product:nth-child(odd) { 
     margin-right: 80px;
 }
+
 .product img {
     width: 240px;
 }
 
-/*нумерация страниц*/
+    /*переключатель страниц*/
+.paginator {
+    margin-top: -16px;
+    margin-bottom: -8px;
+}
+
 .paginator a{
     display: inline-block;
     box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    margin-right: 6px;
+    padding-top: 9px;
 
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    padding-top: 10px;
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
     border: 2px solid #f1f1f1;
     background: #f1f1f1;
     color: black;  
-
     font-size: 12px;
     line-height: 18px;
 }
+
 .paginator  a:hover {
     background: #e5e5e5;
     border: #e5e5e5;
 }
+
 .paginator  a:active {
     background: #d5d5d5;
     border: #d5d5d5;
     border-top: 2px solid #b5b5b5;
 }
+
 .paginator .active {
    background: inherit; 
 }
+
 .paginator a:last-child {
     width: 140px;
 }
+
 /*FOOTER*/
 .main-footer {
-    padding-top: 85px;
+    padding-top: 84px;
 }
+
 .footer-top {
     height: 416px;
     background: #fff url("../img/map.png") no-repeat;
@@ -766,26 +901,29 @@ input[type="checkbox"] {
     box-sizing: border-box;
     float: left;
     width: 250px;
-    min-height: 240px;
-    margin-top: 85px;
-    padding: 25px 20px;
-    
-
+    margin-top: 88px;
+    padding: 13px 20px 0px;
     background: #fff;
 }
 
 .contacts h3 {
     line-height: 30px;
+    font-weight: 700;
+    margin-top: 12px;
 }
 
 .contacts p {
     line-height: 20px;
     color: #666;
+    margin-top: 12px;
 }
 
 .cont-btn {
-    padding: 10px 50px;
-    width: 100px;
+    margin-top: 17px;
+    margin-left: 2px;
+    margin-bottom: 26px;
+    width: 124px;
+    text-align: center;
 }
 
 .footer-bottom {
@@ -799,72 +937,50 @@ input[type="checkbox"] {
 }
 
 .social-btn {
-    font-size: 0px;
     display: inline-block;
     width: 60px;
     height: 60px;
+    margin-right:  26px;
+
     border-radius: 50%;
-    margin-right:  30px;
+    font-size: 0px;
     background: #e1e1e1 url("../img/sprite.png") no-repeat;
 }
+
 .social-btn:hover {
     background-color: #fb565a;
 }
+
 .social-btn:active {
     background-color: #d6494d;
     border-top: 2px solid #b63e42;
 }
+
 .social-btn-vk {
-    background-position: -122px 24px;
+    background-position: 17px -124px;
 }
+
 .social-btn-fb {
-    background-position: -22px 17px;
+    background-position: 24px -27px;
 }
+
 .social-btn-inst {
-    background-position: -68px 19px;
+    background-position: 20px -78px;
 }
+
 .social-btn:last-child {
     margin-right: 0px;
 }
 
 .footer-text {
-   float: right; 
+    float: right; 
     width: 550px;
+    margin-right: 31px;
     margin-bottom: 70px;
 }
 
-
-
-/*ВСПОМОГАТЕЛЬНЫЕ ПОДСВЕТКИ:
-.body {outline: 2px solid blue;}
-.container {outline: 2px solid red;}
-.main-header {outline: 5px solid gray;}
-.header-top {outline: 5px solid pink;}
-.logo {outline: 2px solid green;}
-.main-menu {outline: 2px solid green;}
-.user-block {outline: 2px solid green;}
-.welcome {outline: 5px solid lime;}
-.promo {outline: 2px solid pink;}
-.promo-text {outline: 2px solid orange;}
-.promo img {outline: 2px solid yellow;}
-.slider-nav {outline: 2px dotted yellow;}
-.features {outline: 4px solid lime;}
-.features .websites {outline: 2px solid yellow;}
-.features .apps {outline: 2px solid yellow;}
-.features .presentations {outline: 2px solid yellow;}
-.about {outline: 5px solid navy;}
-.about-text {outline: 2px solid blue;}
-.second-logo  {outline: 2px solid red;}
-.orders {outline: 2px solid purple;}
-.mode {outline: 2px solid purple;}
-.partners {outline: 4px solid purple;}
-.small-logo {outline: 3px solid pink;}
-.search {outline: 3px solid green;}
-.gallery {outline: 3px solid brown;}
-.product {outline: 3px solid pink;}
-.paginator {outline: 3px solid red;}
-.footer-top {outline: 3px solid green;}
-.contacts, .footer-top img {outline: 3px solid green;}
-.footer-social {outline: 3px solid green;}
-.footer-text {outline: 3px solid green;}
-*/
+.footer-text p {
+    line-height: 10px;
+    font-weight: 700;
+    color: #283136;
+}
