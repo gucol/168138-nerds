@@ -455,9 +455,17 @@ b {
 
 .small-logo {
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
     width: 295px;
     height: 83px;
+}
+
+.small-logo:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .small-logo img {
@@ -904,12 +912,15 @@ input[type="checkbox"] {
 }
 
 .footer-top {
+    position: relative;
     height: 416px;
     background: #fff url("../img/map.png") no-repeat;
     background-size: cover;
 }
 
 .contacts {
+    position: absolute;
+    top: -20px;
     box-sizing: border-box;
     float: left;
     width: 250px;
@@ -995,4 +1006,43 @@ input[type="checkbox"] {
     line-height: 10px;
     font-weight: 700;
     color: #283136;
+}
+
+form.popap {
+    position: absolute;
+    top: 1600px;
+    left: 50%;
+    margin-left: -315px;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 40px 3px grey;
+    width: 630px;
+    height: 420px;
+    background: #fff;
+    padding: 55px 90px 50px 80px;
+}
+
+.popap input[type="text"],
+.popap input[type="email"] {
+    width: 215px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.popap textarea {
+    width: 455px;
+    height: 110px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.popap .label-textarea {
+    padding-top: 20px;
+}
+
+.popap .btn {
+    margin-top: 50px;
+    width: 100%;
 }
