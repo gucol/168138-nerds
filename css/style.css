@@ -1013,18 +1013,22 @@ input[type="checkbox"] {
     color: #283136;
 }
 
-form.popap {
+form.popup {
     position: absolute;
     top: 1600px;
     left: 50%;
     margin-left: -315px;
-    display: block;
+    display: none;
     box-sizing: border-box;
     box-shadow: 0px 2px 40px 3px grey;
     width: 630px;
     height: 420px;
     background: #fff;
     padding: 55px 90px 50px 80px;
+}
+
+.popup-show {
+    display: block;
 }
 
 .close {
@@ -1039,15 +1043,15 @@ form.popap {
     cursor: pointer;
 }
 
-.popap input[type="text"],
-.popap input[type="email"] {
+.popup input[type="text"],
+.popup input[type="email"] {
     width: 215px;
     border: 2px solid #d7dcde;
     border-radius: 3px;
     background-color: #fff;
 }
 
-.popap textarea {
+.popup textarea {
     width: 455px;
     height: 110px;
     border: 2px solid #d7dcde;
@@ -1055,11 +1059,11 @@ form.popap {
     background-color: #fff;
 }
 
-.popap .label-textarea {
+.popup .label-textarea {
     padding-top: 20px;
 }
 
-.popap .btn {
+.popup .btn {
     margin-top: 50px;
     width: 100%;
 }

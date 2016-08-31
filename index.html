@@ -139,7 +139,7 @@
 					</div>
 				</div>
 		</footer>
-		<form class="popap" action="#" method="post">
+		<form class="popup popup-show" action="#" method="post">
 			<input class="close" type="submit" value="закрыть">
 			<table>
 				<tr>
@@ -172,5 +172,18 @@
 				</tr>
 			</table>
 		</form>
+		<script>
+			var btn = document.querySelector(".cont-btn");
+			var popup = document.querySelector(".popup");
+			var close = popup.querySelector(".close");
+
+			btn.addEventListener("click", function(event){
+				event.preventDefault();
+			popup.classList.add("popup-show");
+			});
+
+      });
+
+		</script>
   </body>
 </html>
