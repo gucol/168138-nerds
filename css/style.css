@@ -120,16 +120,18 @@ b {
     background-color: #eee;
 }
 
+.catalog-header {
+    padding-bottom: 82px;
+}
+
 .logo {
     float: left;
     width: 139px;
 }
 .a-logo {
-    display: inline-block;
-    float: left; 
+    float: left;
     width: 139px;
-    height: 56px;
-    background: url("../img/logo.png") no-repeat 50%;
+    height: 56px; 
 }
 .header-top {
     padding-top: 25px;
@@ -233,18 +235,15 @@ b {
 .basket::before .active {
     border-bottom: 2px solid #fb565a;
 }
-.welcome-block {
-    margin-bottom: 0px;
-}
 
 .welcome {
-    display: inline-block;
     text-align: center;
-    margin: 53px 108px 80px; 
-    
+    margin: 0px; 
+    margin-top: 53px;
+    margin-left: -30px;
     font-size: 40px;
-    line-height: 50px;
-    color: black; 
+    line-height: 49px;
+    color: #000; 
     font-family: "Roboto", "Arial", sans-serif; 
     font-weight: 500;
     text-transform: uppercase; 
@@ -260,7 +259,7 @@ b {
 
 .slide {
     background-repeat: no-repeat;
-    background-position: 540px 41px;
+    background-position: 542px 41px;
 }
 
 .slider input[type="radio"] {
@@ -353,7 +352,7 @@ b {
 .feature {
     float: left;
     width: 240px;
-    margin-right: 79px;
+    margin-right: 80px;
     min-height: 300px;
 }
 
@@ -455,15 +454,15 @@ b {
     padding-bottom: 33px; 
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
+    font-size: 0px;
 }
 
 .small-logo {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
-    width: 295px;
+    width: 300px;
     height: 83px;
-    font-size: 0px;
 }
 
 .small-logo:before {
@@ -489,10 +488,18 @@ b {
 
 /*CATALOG*/
 /*catalog search*/
+.main-catalog {
+    padding-bottom: 2px;
+}
+
 .search {
     float: left;
     width: 240px;
     margin:75px 70px 0px 0px;
+}
+
+.search h2 {
+    margin-top: 2px;
 }
 
 form {
@@ -504,10 +511,14 @@ form {
     width:240px;
 }
 
+.range-filter h2{
+    margin-bottom:13px;
+}
+
 .range-controls {
     position:relative;
     height:80px;
-    margin-bottom:15px;
+    margin-bottom:14px;
     padding:0 30px;
     background:#f1f1f1;
     border-radius:5px;
@@ -539,11 +550,11 @@ form {
 } 
 
 .max-toggle {
-    left:170px;
+    left:161px;
 }
 
 .min-toggle {
-    left:30px;
+    left:20px;
 }
 
 .price-controls {
@@ -560,11 +571,15 @@ form {
     color: #000;
     text-align: center;
     vertical-align: middle;
-    margin-left: 5px;
 }
 
 .min-price {
-    margin-right: 14px;
+    margin-right: 16px;
+    margin-left: 10px;
+}
+
+.max-price {
+    margin-left: 10px;
 }
 
     /*чек-боксы, радио и кнопка*/
@@ -685,7 +700,7 @@ input[type="checkbox"] {
 /*catalog gallery*/
 .gallery {
     float: right;
-    width: 582px;
+    width: 580px;
 }
 
     /*настройки поиска*/
@@ -913,7 +928,7 @@ input[type="checkbox"] {
 
 /*FOOTER*/
 .main-footer {
-    padding-top: 84px;
+    padding-top: 85px;
 }
 
 .footer-top {
@@ -943,19 +958,20 @@ input[type="checkbox"] {
 .contacts p {
     line-height: 20px;
     color: #666;
-    margin-top: 12px;
+    margin-top: -1px;
+    margin-bottom: 20px;
 }
 
 .cont-btn {
-    margin-top: 17px;
-    margin-left: 2px;
+    margin-top: 9px;
+    margin-left: 3px;
     margin-bottom: 26px;
     width: 124px;
     text-align: center;
 }
 
 .footer-bottom {
-    padding: 75px 0px;
+    padding: 74px 0px 22px 2px;
 }
 
 .footer-social {
@@ -966,10 +982,9 @@ input[type="checkbox"] {
 
 .social-btn {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin-right:  26px;
-
+    width: 62px;
+    height: 62px;
+    margin-right: 24px;
     border-radius: 50%;
     font-size: 0px;
     background: #e1e1e1 url("../img/sprite.png") no-repeat;
@@ -1013,28 +1028,31 @@ input[type="checkbox"] {
     color: #283136;
 }
 
-form.popup {
-    position: absolute;
-    top: 1600px;
+/*всплывающее окно*/
+.popup {
+    position: fixed;
+    top: 30px;
     left: 50%;
     margin-left: -315px;
     display: none;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 40px 3px grey;
     width: 630px;
     height: 420px;
+    box-sizing: border-box;
+
+    box-shadow: 0px 2px 40px 3px grey;
     background: #fff;
     padding: 55px 90px 50px 80px;
 }
 
 .popup-show {
     display: block;
+    animation: bounce 0.6s;
 }
 
 .close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 5px;
+    right: 5px;
     font-size: 0px;
     width: 45px;
     height: 45px;
@@ -1043,27 +1061,74 @@ form.popup {
     cursor: pointer;
 }
 
-.popup input[type="text"],
-.popup input[type="email"] {
-    width: 215px;
+.popup form {
+    position: absolute;
+    top: 55px;
+    right: 90px;
+    width: 460px;
+
+    font-size: 16px;
+}
+
+.popup-col {
+    width: 220px;
+}
+
+.popup-col1 {
+    float: left;
+}
+
+.popup-col2 {
+    float: right;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 200px;
+    height: 35px;
     border: 2px solid #d7dcde;
     border-radius: 3px;
     background-color: #fff;
+    margin-top: 10px;
+    padding-left: 15px;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
 }
 
-.popup textarea {
-    width: 455px;
+.textarea {
+    margin-top: 90px;
+}
+
+.form textarea {
+    width: 426px;
     height: 110px;
+    margin-top: 10px;
     border: 2px solid #d7dcde;
     border-radius: 3px;
     background-color: #fff;
+    padding: 10px 15px;
 }
 
-.popup .label-textarea {
-    padding-top: 20px;
-}
-
-.popup .btn {
+.form .btn {
     margin-top: 50px;
     width: 100%;
 }
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+

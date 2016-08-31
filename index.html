@@ -84,7 +84,7 @@
 			</section>
 			<section class="about clearfix">
 				<div class="column1">
-                    <b>Мы - маленькая, но гордая <br> дизайн-студия из Краснодара.</b>
+                    <b>Мы &mdash; маленькая, но гордая <br> дизайн-студия из Краснодара.</b>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
                     <h3>Выполняем заказы на разработку:</h3>
 					<ul>
@@ -139,51 +139,25 @@
 					</div>
 				</div>
 		</footer>
-		<form class="popup popup-show" action="#" method="post">
-			<input class="close" type="submit" value="закрыть">
-			<table>
-				<tr>
-					<td><label for="name">Ваше имя:</label></td>
-					<td><label for="email">Ваш е-mail:</label></td>
-				</tr>
-				<tr>
-					<td>
-						<input type="text" name="name" id="name" placeholder="представьтесь, пожалуйста" required>
-					</td>
-					<td>
-						<input type="email" name="email" id="email" placeholder="для отправки ответа" required>
-					</td>
-				</tr>
-				<tr>
-					<td class="label-textarea" colspan="2">
-						<label for="comment-field">Текст письма:</label>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<textarea name="comment" id="comment-field">в свободной форме
-           				 </textarea>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<input class="btn" type="submit" value="отправить">
-					</td>
-				</tr>
-			</table>
-		</form>
-		<script>
-			var btn = document.querySelector(".cont-btn");
-			var popup = document.querySelector(".popup");
-			var close = popup.querySelector(".close");
-
-			btn.addEventListener("click", function(event){
-				event.preventDefault();
-			popup.classList.add("popup-show");
-			});
-
-      });
-
-		</script>
+		<div class="popup">
+			<button class="close" type="button" value="закрыть"></button>
+			<form class="form clearfix" action="#" method="post">
+				<div class="popup-col popup-col1">
+					<label for="name">Ваше имя:</label>
+					<input type="text" name="name" id="name" placeholder="представьтесь, пожалуйста" required>
+				</div>
+				<div class="popup-col popup-col2">
+					<label for="email">Ваш е-mail:</label>
+					<input type="email" name="email" id="email" placeholder="для отправки ответа" required>
+				</div>
+				<div class="textarea">
+					<label class="comment-label" for="comment-field">Текст письма:</label>
+					<textarea name="comment" id="comment-field">в свободной форме
+           			</textarea>
+				</div>
+				<input class="btn" type="submit" value="отправить">
+			</form>
+		</div>	
+		<script src="js/scripts.js"></script>
   </body>
 </html>
