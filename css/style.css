@@ -1,6 +1,6 @@
 body {
-    margin: 0px auto;
     min-width: 900px;
+    margin: 0px auto;
   
     font-size: 16px;
     line-height: 22px;
@@ -59,17 +59,17 @@ b {
 .btn {
     display: inline-block;
     padding: 10px 40px;
-    border-radius: 3px;
-  
+    
     font-size: 12px;
     font-family:"Roboto", "Arial", sans-serif;
     font-weight: 500;
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
-
     color: #fff;
+
     background-color: #fb565a;
+    border-radius: 3px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -84,8 +84,8 @@ b {
 }
 
 .pink:active {
-    background-color: #b63538;
-    box-shadow: inset 0 2px 0 0 #9b2d30; 
+    box-shadow: inset 0 2px 0 0 #9b2d30;
+    background-color: #b63538; 
 }
 
 .green {
@@ -97,8 +97,8 @@ b {
 }
 
 .green:active {
-    background-color:#009053;
     box-shadow: inset 0 2px 0 0 #007b47;
+    background-color:#009053;
 }
 
 .yellow {
@@ -110,29 +110,28 @@ b {
 }
 
 .yellow:active {
-    background-color:#c09b24;
     box-shadow:inset 0 2px 0 0 #a3841f;
+    background-color:#c09b24;
 }
 
 /* HEADER */
+/*header index*/
 .main-header {
     margin: 0px auto;
     background-color: #eee;
-}
-
-.catalog-header {
-    padding-bottom: 82px;
 }
 
 .logo {
     float: left;
     width: 139px;
 }
+
 .a-logo {
     float: left;
     width: 139px;
     height: 56px; 
 }
+
 .header-top {
     padding-top: 25px;
 }
@@ -143,27 +142,28 @@ b {
 }
 
 .main-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0px;
+    padding: 0px;
     text-align: right;
+    list-style: none;
 }
+
 .main-menu li {
     display: inline-block;
-    padding: 10px 21px;
     margin-top: 20px;
+    padding: 10px 21px;
 }
 
 .main-menu a {
     display: block;
 
-    text-decoration: none;
     color: #070707;
     font-size: 14px;
     line-height: 30px;
     font-family: "Roboto", "Arial", sans-serif; 
     font-weight: 500;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    text-decoration: none; 
 }
 
 .main-menu a:hover {
@@ -224,6 +224,7 @@ b {
 .basket:active {
     color: #8f8f8f;
 }
+
 .basket:active::before{
     background: #eee url("../img/sprite.png") 0px 0px;
     opacity: 0.3;
@@ -232,15 +233,21 @@ b {
 .basket .active {
     border-bottom: 2px solid #fb565a;
 }
+
 .basket::before .active {
     border-bottom: 2px solid #fb565a;
 }
 
+/*header catalog*/
+.catalog-header {
+    padding-bottom: 82px;
+}
+
 .welcome {
-    text-align: center;
     margin: 0px; 
     margin-top: 53px;
     margin-left: -30px;
+
     font-size: 40px;
     line-height: 49px;
     color: #000; 
@@ -248,13 +255,15 @@ b {
     font-weight: 500;
     text-transform: uppercase; 
     letter-spacing: 0.2px;
+    text-align: center;
 }
 
-/*INDEX PROMO*/
+/*INDEX*/
+/*index promo*/
 .slider {
+    position: relative;
     width: 900px;
     margin: 0 auto;
-    position: relative;
 }
 
 .slide {
@@ -270,8 +279,9 @@ b {
     position: absolute;
     bottom: 80px;
     left: 428px;
-    margin-left: -100px;
     width: 200px;
+    margin-left: -100px;
+
     text-align: center;
 }
 
@@ -342,18 +352,17 @@ b {
     background: #c1c1c1;
 }
 
-/*INDEX*/
 /*index features*/
 .features {
-    padding: 80px 0;
+    padding: 80px 0px;
     border-bottom: 2px solid #eee;
 }
 
 .feature {
     float: left;
     width: 240px;
-    margin-right: 80px;
     min-height: 300px;
+    margin-right: 80px;
 }
 
 .feature h2 {
@@ -386,9 +395,9 @@ b {
 
 /*index about*/
 .about {
+    box-sizing: border-box;
     padding-top: 58px;
     padding-bottom: 47px;
-    box-sizing: border-box;
 }
 
 .column1 {
@@ -405,21 +414,22 @@ b {
 .column1 b {
     letter-spacing: -0.5px;
 }
+
 .column1 p {
     margin-top: 18px;
     margin-bottom: 45px;
 }
 
 .about ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .about li {
     position: relative;
-    padding-left: 35px;
     margin-bottom: 22px;
+    padding-left: 35px;
 
     font-size: 16px;
     line-height: 22px;
@@ -432,9 +442,11 @@ b {
     position: absolute;
     top: 10px;
     left: 0px;
+
     display: inline-block;
     width: 25px;
     height: 2px;
+
     background-color: #fb565a;
 }
 
@@ -452,17 +464,17 @@ b {
 .partners {
     padding-top: 48px;
     padding-bottom: 33px; 
+    font-size: 0px;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
-    font-size: 0px;
 }
 
 .small-logo {
     display: inline-block;
-    vertical-align: baseline;
-    text-align: center;
     width: 300px;
     height: 83px;
+    vertical-align: baseline;
+    text-align: center;    
 }
 
 .small-logo:before {
@@ -526,8 +538,8 @@ form {
 }
 
 .scale {
-    margin-top:39px;
     height:2px;
+    margin-top:39px;
     background:#d7dcde;
 }
 
@@ -543,8 +555,8 @@ form {
     width:4px;
     height:4px;
 
-    border:8px solid white;
     background:#ababab;
+    border:8px solid white;
     cursor:pointer;
     border-radius:50%;
 } 
@@ -564,13 +576,13 @@ form {
 .min-price, .max-price {
     width: 78px;
     height: 36px;
+    vertical-align: middle;
 
-    border: none;
-    border-radius: 3px;
-    background: #f1f1f1;
     color: #000;
     text-align: center;
-    vertical-align: middle;
+    background: #f1f1f1;
+    border: none;
+    border-radius: 3px; 
 }
 
 .min-price {
@@ -590,7 +602,7 @@ form {
 
 .form-group input[type="radio"],
 input[type="checkbox"] {
-  display: none;
+    display: none;
 }
 
 .form-group label {
@@ -649,21 +661,22 @@ input[type="checkbox"] {
 
 .group-2 label::before {
     content: "";
-    position: absolute; 
-    border-radius: 5px;
-    cursor: pointer;
+    position: absolute;
     top: -3px;
     left: -2px;
     width: 23px;
     height: 23px;
+
+    border-radius: 5px;
     box-shadow: inset 0px 0px 0px 2px #c1c1c1;
+    cursor: pointer;
     opacity: 0.8;
 }
 
 .group-2 input[type="checkbox"]:checked ~ label::before {
-    background: url("../img/sprite.png") no-repeat 0px -90px;
     width: 26px;
     height: 26px;
+    background: url("../img/sprite.png") no-repeat 0px -90px;
     box-shadow: none;
     opacity: 0.8;
 }
@@ -680,12 +693,13 @@ input[type="checkbox"] {
 
 .btn-form {
     width: 155px;
-    background-color: #f1f1f1;
-    color: #000;
+    
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
+    color: #000;
+    background-color: #f1f1f1;
 }
 
 .btn-form:hover {
@@ -745,9 +759,9 @@ input[type="checkbox"] {
 }
 
 .sorting .arrow {
+    margin: 3px;
     font-size: 0px;
     border-bottom: none;
-    margin: 3px;
 }
 
 .arrow::before {
@@ -785,7 +799,6 @@ input[type="checkbox"] {
     border-top-color: #00ca74;
 }
 
-
     /*страницы товара*/
 .articles {
     font-size: 0px;
@@ -796,35 +809,40 @@ input[type="checkbox"] {
     display: inline-block;
     margin-bottom: 85px;
     padding-top: 14px;
+
     font-size: 0px;
 }
 
 .product::before {
-    position: absolute;
     content: "";
+    position: absolute;
     top: -16px;
     left: 0px;
     width: 240px;
     height: 30px;
+
     background: url("../img/hat-sprite.png") 0 0;
     border-radius: 5px 5px 0px 0px; 
 }
+
 .product:hover::before {
     background: url("../img/hat-sprite.png") 0 -40px;
 }
 
 .description {
-    display: none;
-    box-sizing: border-box;
-    position: absolute;
     content: "";
-    padding: 30px 20px 30px;
+    position: absolute;
     top: 34px;
     left: 20px;
     width: 200px;
     height: 200px;
-    background-color: #fff;
+    display: none;
+    box-sizing: border-box;
+    
+    padding: 30px 20px 30px;
+
     text-align: center;
+    background-color: #fff;
 }
 
 .description .name {
@@ -853,9 +871,10 @@ input[type="checkbox"] {
     position: absolute;
     top: 132px;
     left: 30px;
-    padding: 10px 0px;
-    font-size: 17px;
     width: 140px;
+    padding: 10px 0px;
+
+    font-size: 17px;
 }
 
 .product:hover .description {
@@ -899,12 +918,13 @@ input[type="checkbox"] {
 
     text-decoration: none;
     text-align: center;
-    border-radius: 3px;
-    border: 2px solid #f1f1f1;
-    background: #f1f1f1;
     color: black;  
     font-size: 12px;
     line-height: 18px;
+
+    background: #f1f1f1;
+    border-radius: 3px;
+    border: 2px solid #f1f1f1;
 }
 
 .paginator  a:hover {
@@ -927,6 +947,7 @@ input[type="checkbox"] {
 }
 
 /*FOOTER*/
+/*footer top*/
 .main-footer {
     padding-top: 85px;
 }
@@ -934,6 +955,7 @@ input[type="checkbox"] {
 .footer-top {
     position: relative;
     height: 416px;
+
     background: #fff url("../img/map.png") no-repeat;
     background-size: cover;
 }
@@ -941,43 +963,49 @@ input[type="checkbox"] {
 .contacts {
     position: absolute;
     top: -20px;
+
     box-sizing: border-box;
     float: left;
     width: 250px;
     margin-top: 108px;
     padding: 13px 20px 0px;
+
     background: #fff;
 }
 
 .contacts h3 {
+    margin-top: 12px;
+
     line-height: 30px;
     font-weight: 700;
-    margin-top: 12px;
 }
 
 .contacts p {
-    line-height: 20px;
-    color: #666;
     margin-top: -1px;
     margin-bottom: 20px;
+
+    line-height: 20px;
+    color: #666;
 }
 
 .cont-btn {
+    width: 124px;
     margin-top: 9px;
     margin-left: 3px;
     margin-bottom: 26px;
-    width: 124px;
+    
     text-align: center;
 }
 
+/*footer bottom*/
 .footer-bottom {
     padding: 74px 0px 22px 2px;
 }
 
 .footer-social {
+    display: block;
     float:left;
     width: 300px;
-    display: block;
 }
 
 .social-btn {
@@ -985,9 +1013,10 @@ input[type="checkbox"] {
     width: 62px;
     height: 62px;
     margin-right: 24px;
-    border-radius: 50%;
+    
     font-size: 0px;
     background: #e1e1e1 url("../img/sprite.png") no-repeat;
+    border-radius: 50%;
 }
 
 .social-btn:hover {
@@ -1033,14 +1062,15 @@ input[type="checkbox"] {
     position: fixed;
     top: 30px;
     left: 50%;
-    margin-left: -315px;
+
     display: none;
     width: 460px;
     height: 365px;
-
-    box-shadow: 0px 2px 40px 3px grey;
-    background: #fff;
+    margin-left: -315px;
     padding: 55px 90px 50px 80px;
+
+    background: #fff;
+    box-shadow: 0px 2px 40px 3px grey; 
 }
 
 .popup-show {
@@ -1056,9 +1086,10 @@ input[type="checkbox"] {
     position: absolute;
     top: 5px;
     right: 5px;
-    font-size: 0px;
     width: 45px;
     height: 45px;
+
+    font-size: 0px;
     background: url("../img/close.png") no-repeat 50%;
     border: none;
     cursor: pointer;
@@ -1089,9 +1120,6 @@ input[type="checkbox"] {
 .form input[type="email"] {
     width: 200px;
     height: 35px;
-    border: 2px solid #d7dcde;
-    border-radius: 3px;
-    background-color: #fff;
     margin-top: 10px;
     padding-left: 15px;
 
@@ -1099,6 +1127,10 @@ input[type="checkbox"] {
     font-size: 16px;
     line-height: 22px;
     color: #000;
+
+    background-color: #fff;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
 }
 
 .textarea {
@@ -1109,9 +1141,6 @@ input[type="checkbox"] {
     width: 426px;
     height: 110px;
     margin-top: 10px;
-    border: 2px solid #d7dcde;
-    border-radius: 3px;
-    background-color: #fff;
     padding: 10px 15px;
 
     color:#000;
@@ -1119,38 +1148,46 @@ input[type="checkbox"] {
     opacity: 1;
     text-transform: uppercase;
     font-weight: 500;
+
+    background-color: #fff;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
 }
 
 .form input::-webkit-input-placeholder {
     color:#000;
     font-size: 12px;
-    opacity: 1;
     text-transform: uppercase;
     font-weight: 500;
+
+    opacity: 1;
 }
 
 .form input::-moz-placeholder {
     color:#000;
     font-size: 12px;
-    opacity: 1;
     text-transform: uppercase;
     font-weight: 500;
+
+    opacity: 1;
 }
 
 .form input:-moz-placeholder {
     color:#000;
     font-size: 12px;
-    opacity: 1;
     text-transform: uppercase;
     font-weight: 500;
+
+    opacity: 1;
 }
 
 .form input:-ms-input-placeholder {
     color:#000;
     font-size: 12px;
-    opacity: 1;
     text-transform: uppercase;
     font-weight: 500;
+
+    opacity: 1;
 }
 
 .form textarea:hover,
@@ -1159,11 +1196,13 @@ input[type="checkbox"] {
 }
 
 .form .btn {
-    margin-top: 50px;
     width: 100%;
+    margin-top: 50px;
+    
     opacity: 1;
 }
 
+/*анимации*/
 @keyframes bounce {
   0%   {
     transform: translateY(-2000px);
