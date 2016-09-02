@@ -12,12 +12,6 @@ var storage = localStorage.getItem("name");
 link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add("popup-show");
-        if (storage) {
-          name.value = storage;
-          email.focus();
-        } else {
-        	name.focus();
-    	}
 });
 
 close.addEventListener("click", function(event) {

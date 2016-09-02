@@ -128,7 +128,8 @@ b {
 
 .main-menu {
     float: left;
-    width: 600px;   
+    width: 600px;
+    margin-top: 20px;   
 }
 
 .main-menu ul {
@@ -140,8 +141,7 @@ b {
 
 .main-menu li {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 21px;
+    padding: 10px 20px;
 }
 
 .main-menu a {
@@ -171,7 +171,7 @@ b {
 .user-block {
     float: right;
     width: 113px;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .basket {
@@ -397,13 +397,10 @@ b {
     margin-bottom: 21px;
 }
 
-.column1 b {
-    letter-spacing: -0.5px;
-}
-
 .column1 p {
     margin-top: 18px;
     margin-bottom: 45px;
+    letter-spacing: 0.1px;
 }
 
 .about ul {
@@ -457,10 +454,11 @@ b {
 
 .small-logo {
     display: inline-block;
-    width: 300px;
+    width: 220px;
     height: 83px;
-    vertical-align: baseline;
-    text-align: center;    
+    margin-right: 90px;
+    padding-left: 10px;
+    vertical-align: baseline;  
 }
 
 .small-logo:before {
@@ -1051,7 +1049,7 @@ iframe {
 /*всплывающее окно*/
 .popup {
     position: fixed;
-    top: 30px;
+    top: 100px;
     left: 50%;
 
     display: none;
