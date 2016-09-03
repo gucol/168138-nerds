@@ -48,6 +48,7 @@ b {
 
 .btn {
     display: inline-block;
+    vertical-align: baseline;
     padding: 10px 40px;
     
     font-size: 12px;
@@ -141,7 +142,8 @@ b {
 
 .main-menu li {
     display: inline-block;
-    padding: 10px 20px;
+    vertical-align: baseline;
+    margin: 10px 20px;
 }
 
 .main-menu a {
@@ -164,7 +166,7 @@ b {
     color: #8f8f8f;
 }
 
-.main-menu .active {
+.active-page {
     border-bottom: 2px solid #fb565a;
 }
 
@@ -178,7 +180,9 @@ b {
     position: relative;
 
     display: inline-block;
-    padding: 10px 20px;
+    vertical-align: baseline;
+    margin: 10px 20px;
+    margin-left: 0px;
     padding-left: 25px;
 
     text-decoration: none;
@@ -193,7 +197,7 @@ b {
 .basket::before {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 6px;
     left: -1px;
     
     width: 15px;
@@ -427,6 +431,7 @@ b {
     left: 0px;
 
     display: inline-block;
+    vertical-align: baseline;
     width: 25px;
     height: 2px;
 
@@ -454,6 +459,7 @@ b {
 
 .small-logo {
     display: inline-block;
+    vertical-align: middle;
     width: 220px;
     height: 83px;
     margin-right: 90px;
@@ -771,6 +777,14 @@ input[type="checkbox"] {
     border-bottom:none;
 }
 
+.bottom:hover::before {
+    border-top-color: #b5b5b5;
+}
+
+.up:hover::before {
+    border-bottom-color: #b5b5b5;
+}
+
 .bottom:active::before {
     border-top-color: #000;
 }
@@ -852,9 +866,6 @@ input[type="checkbox"] {
 }
 
 .description a {
-    position: absolute;
-    top: 132px;
-    left: 30px;
     width: 140px;
     padding: 10px 0px;
 
@@ -922,8 +933,11 @@ input[type="checkbox"] {
     border-top-color: #b5b5b5;
 }
 
-.paginator .active {
-   background: inherit; 
+.paginator .active,
+.paginator .active:hover,
+.paginator .active:active {
+   background: #fff;
+   border-color: #f1f1f1;
 }
 
 .paginator a:last-child {
@@ -1014,11 +1028,11 @@ iframe {
 
 .social-btn:active {
     background-color: #d6494d;
-    border-top: 2px solid #b63e42;
+    box-shadow: inset 0 2px 0 0 #b63e42;
 }
 
 .social-btn-vk {
-    background-position: 14px -120px;
+    background-position: 17px -120px;
 }
 
 .social-btn-fb {
@@ -1026,7 +1040,7 @@ iframe {
 }
 
 .social-btn-inst {
-    background-position: 19px -169px;
+    background-position: 21px -169px;
 }
 
 .social-btn:last-child {
@@ -1184,6 +1198,12 @@ iframe {
 .form textarea:hover,
 .form input:hover {
     border-color: #a2a9ac;
+}
+
+.form textarea:focus,
+.form input:focus {
+    outline: none;
+    border-color: #56bffb;
 }
 
 .form .btn {
