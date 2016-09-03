@@ -581,7 +581,6 @@ b
     margin-right: 90px;
     padding-left: 10px;
 
-    vertical-align: middle;
     vertical-align: baseline;
 }
 
@@ -959,6 +958,7 @@ input[type='checkbox']
 .arrow::before
 {
     display: inline-block;
+    vertical-align: baseline;
 
     content: '';
 
