@@ -1090,7 +1090,7 @@ input[type='checkbox']
     font-weight: 500;
     line-height: 18px;
 
-    margin-bottom: 68px;
+    margin-bottom: 30px;
 
     text-align: center;
 
@@ -1100,10 +1100,6 @@ input[type='checkbox']
 .description a
 {
     font-size: 17px;
-
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
 
     width: 140px;
     padding: 10px 0;

@@ -773,15 +773,12 @@ h2 {
 
 .description p {
     font-size: 14px;
-    margin-bottom: 68px;
+    margin-bottom: 30px;
     color: #283136
 }
 
 .description a {
     font-size: 17px;
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
     width: 140px;
     padding: 10px 0
 }
